@@ -67,7 +67,9 @@ library(htmltools)
 rr <- tags$div(
   strong("Mountain Association Bothies in Great Britain"),
   br(),
-  a(href=url,"Source: Wikipedia:Mountain Association Bothies")
+  a(href=url,"Source: Wikipedia:Mountain Association Bothies"),
+  br(),
+  a(paste('Generated at:',Sys.time()))
 )  
 
 map_leaflet <- leaflet(data = bothies) %>%
